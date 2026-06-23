@@ -28,6 +28,10 @@
       cursor: auto;
     }
 
+    body.loaded [data-aos] {
+    opacity: 1 !important;
+}
+
     /* ===== PREMIUM BACKGROUND EFFECT ===== */
     #particles-js {
       position: fixed;

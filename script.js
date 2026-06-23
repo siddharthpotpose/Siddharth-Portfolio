@@ -1,5 +1,7 @@
   
     // ===== PRELOADER =====
+    document.body.classList.add('loaded');
+    
     const loaderFill = document.getElementById('loaderFill');
     let pct = 0;
     const loaderTimer = setInterval(() => {
@@ -10,7 +12,18 @@
           const pre = document.getElementById('preloader');
           pre.style.transition = 'opacity 0.5s';
           pre.style.opacity = '0';
-          setTimeout(() => { pre.style.display = 'none'; initAll(); }, 500);
+         setTimeout(() => {
+  pre.style.display = 'none';
+
+  requestAnimationFrame(() => {
+    initAll();
+
+    if (window.AOS) {
+      AOS.refreshHard();
+    }
+  });
+
+}, 500);;
         }, 250);
       }
       loaderFill.style.width = Math.min(pct, 100) + '%';
@@ -63,6 +76,9 @@
 
       // ===== AOS =====
       AOS.init({ duration: 820, easing: 'ease-out-cubic', once: true, offset: 60 });
+      window.addEventListener('load', () => {
+  AOS.refreshHard();
+});
 
       // ===== GSAP =====
       gsap.registerPlugin(ScrollTrigger);
@@ -243,261 +259,261 @@
       igWrapper.appendChild(menu);
     })();
   
-document.addEventListener('DOMContentLoaded', () => {
-  const nav = document.getElementById('mainNav');
-  const backToTop = document.getElementById('btt');
-  const cursorGlow = document.querySelector('.cursor-glow');
-  const loaderFill = document.getElementById('loaderFill');
-  const preloader = document.getElementById('preloader');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const nav = document.getElementById('mainNav');
+//   const backToTop = document.getElementById('btt');
+//   const cursorGlow = document.querySelector('.cursor-glow');
+//   const loaderFill = document.getElementById('loaderFill');
+//   const preloader = document.getElementById('preloader');
 
-  if (loaderFill) {
-    let progress = 0;
-    const loaderTimer = window.setInterval(() => {
-      progress = Math.min(progress + Math.floor(Math.random() * 18) + 8, 100);
-      loaderFill.style.width = `${progress}%`;
+//   if (loaderFill) {
+//     let progress = 0;
+//     const loaderTimer = window.setInterval(() => {
+//       progress = Math.min(progress + Math.floor(Math.random() * 18) + 8, 100);
+//       loaderFill.style.width = `${progress}%`;
 
-      if (progress >= 100) {
-        window.clearInterval(loaderTimer);
-        window.setTimeout(() => {
-          if (preloader) {
-            preloader.style.opacity = '0';
-            preloader.style.pointerEvents = 'none';
-            preloader.style.transition = 'opacity 0.45s ease';
-          }
-        }, 250);
-      }
-    }, 120);
-  }
+//       if (progress >= 100) {
+//         window.clearInterval(loaderTimer);
+//         window.setTimeout(() => {
+//           if (preloader) {
+//             preloader.style.opacity = '0';
+//             preloader.style.pointerEvents = 'none';
+//             preloader.style.transition = 'opacity 0.45s ease';
+//           }
+//         }, 250);
+//       }
+//     }, 120);
+//   }
 
-  if (cursorGlow) {
-    window.addEventListener('pointermove', (event) => {
-      cursorGlow.style.left = `${event.clientX}px`;
-      cursorGlow.style.top = `${event.clientY}px`;
-    });
-  }
+//   if (cursorGlow) {
+//     window.addEventListener('pointermove', (event) => {
+//       cursorGlow.style.left = `${event.clientX}px`;
+//       cursorGlow.style.top = `${event.clientY}px`;
+//     });
+//   }
 
-  if (window.AOS) {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out-cubic',
-      once: true,
-      offset: 80
-    });
-  }
+//   if (window.AOS) {
+//     AOS.init({
+//       duration: 800,
+//       easing: 'ease-out-cubic',
+//       once: true,
+//       offset: 80
+//     });
+//   }
 
-  if (window.Typed && document.getElementById('typed-el')) {
-    new Typed('#typed-el', {
-      strings: [
-        'Angular Front-End Developer',
-        'REST API Integration',
-        'Responsive SPA Development',
-        'Website and Digital Operations'
-      ],
-      typeSpeed: 45,
-      backSpeed: 24,
-      backDelay: 1400,
-      loop: true
-    });
-  }
+//   if (window.Typed && document.getElementById('typed-el')) {
+//     new Typed('#typed-el', {
+//       strings: [
+//         'Angular Front-End Developer',
+//         'REST API Integration',
+//         'Responsive SPA Development',
+//         'Website and Digital Operations'
+//       ],
+//       typeSpeed: 45,
+//       backSpeed: 24,
+//       backDelay: 1400,
+//       loop: true
+//     });
+//   }
 
-  if (window.particlesJS && document.getElementById('particles-js')) {
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 55, density: { enable: true, value_area: 900 } },
-        color: { value: ['#7c3aed', '#06b6d4', '#ec4899'] },
-        shape: { type: 'circle' },
-        opacity: { value: 0.35, random: true },
-        size: { value: 3, random: true },
-        line_linked: {
-          enable: true,
-          distance: 140,
-          color: '#7c3aed',
-          opacity: 0.18,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 1.4,
-          direction: 'none',
-          random: true,
-          straight: false,
-          out_mode: 'out',
-          bounce: false
-        }
-      },
-      interactivity: {
-        detect_on: 'canvas',
-        events: {
-          onhover: { enable: true, mode: 'grab' },
-          onclick: { enable: true, mode: 'push' },
-          resize: true
-        },
-        modes: {
-          grab: { distance: 160, line_linked: { opacity: 0.28 } },
-          push: { particles_nb: 3 }
-        }
-      },
-      retina_detect: true
-    });
-  }
+//   if (window.particlesJS && document.getElementById('particles-js')) {
+//     particlesJS('particles-js', {
+//       particles: {
+//         number: { value: 55, density: { enable: true, value_area: 900 } },
+//         color: { value: ['#7c3aed', '#06b6d4', '#ec4899'] },
+//         shape: { type: 'circle' },
+//         opacity: { value: 0.35, random: true },
+//         size: { value: 3, random: true },
+//         line_linked: {
+//           enable: true,
+//           distance: 140,
+//           color: '#7c3aed',
+//           opacity: 0.18,
+//           width: 1
+//         },
+//         move: {
+//           enable: true,
+//           speed: 1.4,
+//           direction: 'none',
+//           random: true,
+//           straight: false,
+//           out_mode: 'out',
+//           bounce: false
+//         }
+//       },
+//       interactivity: {
+//         detect_on: 'canvas',
+//         events: {
+//           onhover: { enable: true, mode: 'grab' },
+//           onclick: { enable: true, mode: 'push' },
+//           resize: true
+//         },
+//         modes: {
+//           grab: { distance: 160, line_linked: { opacity: 0.28 } },
+//           push: { particles_nb: 3 }
+//         }
+//       },
+//       retina_detect: true
+//     });
+//   }
 
-  const updateScrollUi = () => {
-    const scrolled = window.scrollY > 80;
-    nav?.classList.toggle('scrolled', scrolled);
-    backToTop?.classList.toggle('show', window.scrollY > 500);
-  };
+//   const updateScrollUi = () => {
+//     const scrolled = window.scrollY > 80;
+//     nav?.classList.toggle('scrolled', scrolled);
+//     backToTop?.classList.toggle('show', window.scrollY > 500);
+//   };
 
-  updateScrollUi();
-  window.addEventListener('scroll', updateScrollUi, { passive: true });
+//   updateScrollUi();
+//   window.addEventListener('scroll', updateScrollUi, { passive: true });
 
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      const targetId = link.getAttribute('href');
-      if (!targetId || targetId === '#') return;
+//   document.querySelectorAll('a[href^="#"]').forEach((link) => {
+//     link.addEventListener('click', (event) => {
+//       const targetId = link.getAttribute('href');
+//       if (!targetId || targetId === '#') return;
 
-      const target = document.querySelector(targetId);
-      if (!target) return;
+//       const target = document.querySelector(targetId);
+//       if (!target) return;
 
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//       event.preventDefault();
+//       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-      const navMenu = document.getElementById('navMenu');
-      if (navMenu?.classList.contains('show') && window.bootstrap) {
-        bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
-      }
-    });
-  });
+//       const navMenu = document.getElementById('navMenu');
+//       if (navMenu?.classList.contains('show') && window.bootstrap) {
+//         bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
+//       }
+//     });
+//   });
 
-  const sections = [...document.querySelectorAll('section[id]')];
-  const navLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
+//   const sections = [...document.querySelectorAll('section[id]')];
+//   const navLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
 
-  if (sections.length && navLinks.length) {
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
+//   if (sections.length && navLinks.length) {
+//     const sectionObserver = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (!entry.isIntersecting) return;
 
-        navLinks.forEach((link) => {
-          link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-        });
-      });
-    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+//         navLinks.forEach((link) => {
+//           link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+//         });
+//       });
+//     }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
 
-    sections.forEach((section) => sectionObserver.observe(section));
-  }
+//     sections.forEach((section) => sectionObserver.observe(section));
+//   }
 
-  document.querySelectorAll('.stab').forEach((button) => {
-    button.addEventListener('click', () => {
-      const tab = button.dataset.stab;
-      if (!tab) return;
+//   document.querySelectorAll('.stab').forEach((button) => {
+//     button.addEventListener('click', () => {
+//       const tab = button.dataset.stab;
+//       if (!tab) return;
 
-      document.querySelectorAll('.stab').forEach((item) => item.classList.remove('active'));
-      document.querySelectorAll('.skill-panel').forEach((panel) => panel.classList.remove('active'));
+//       document.querySelectorAll('.stab').forEach((item) => item.classList.remove('active'));
+//       document.querySelectorAll('.skill-panel').forEach((panel) => panel.classList.remove('active'));
 
-      button.classList.add('active');
-      document.getElementById(`stab-${tab}`)?.classList.add('active');
-      animateSkillBars();
-    });
-  });
+//       button.classList.add('active');
+//       document.getElementById(`stab-${tab}`)?.classList.add('active');
+//       animateSkillBars();
+//     });
+//   });
 
-  const animateSkillBars = () => {
-    document.querySelectorAll('.skill-panel.active .sk-fill').forEach((bar) => {
-      bar.style.width = `${bar.dataset.fill || 0}%`;
-    });
-  };
+//   const animateSkillBars = () => {
+//     document.querySelectorAll('.skill-panel.active .sk-fill').forEach((bar) => {
+//       bar.style.width = `${bar.dataset.fill || 0}%`;
+//     });
+//   };
 
-  const skillsSection = document.getElementById('skills');
-  if (skillsSection) {
-    const skillObserver = new IntersectionObserver((entries, observer) => {
-      if (entries.some((entry) => entry.isIntersecting)) {
-        animateSkillBars();
-        observer.disconnect();
-      }
-    }, { threshold: 0.25 });
+//   const skillsSection = document.getElementById('skills');
+//   if (skillsSection) {
+//     const skillObserver = new IntersectionObserver((entries, observer) => {
+//       if (entries.some((entry) => entry.isIntersecting)) {
+//         animateSkillBars();
+//         observer.disconnect();
+//       }
+//     }, { threshold: 0.25 });
 
-    skillObserver.observe(skillsSection);
-  }
+//     skillObserver.observe(skillsSection);
+//   }
 
-  document.querySelectorAll('.pf-btn').forEach((button) => {
-    button.addEventListener('click', () => {
-      const filter = button.dataset.pf || 'all';
+//   document.querySelectorAll('.pf-btn').forEach((button) => {
+//     button.addEventListener('click', () => {
+//       const filter = button.dataset.pf || 'all';
 
-      document.querySelectorAll('.pf-btn').forEach((item) => item.classList.remove('active'));
-      button.classList.add('active');
+//       document.querySelectorAll('.pf-btn').forEach((item) => item.classList.remove('active'));
+//       button.classList.add('active');
 
-      document.querySelectorAll('.pf-item').forEach((item) => {
-        const shouldShow = filter === 'all' || item.dataset.cat === filter;
-        item.style.display = shouldShow ? '' : 'none';
-      });
+//       document.querySelectorAll('.pf-item').forEach((item) => {
+//         const shouldShow = filter === 'all' || item.dataset.cat === filter;
+//         item.style.display = shouldShow ? '' : 'none';
+//       });
 
-      if (window.AOS) AOS.refresh();
-    });
-  });
+//       if (window.AOS) AOS.refresh();
+//     });
+//   });
 
-  const counters = document.querySelectorAll('.counter');
-  if (counters.length) {
-    const counterObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
+//   const counters = document.querySelectorAll('.counter');
+//   if (counters.length) {
+//     const counterObserver = new IntersectionObserver((entries, observer) => {
+//       entries.forEach((entry) => {
+//         if (!entry.isIntersecting) return;
 
-        const counter = entry.target;
-        const target = Number(counter.dataset.target || 0);
-        const duration = 1100;
-        const start = performance.now();
+//         const counter = entry.target;
+//         const target = Number(counter.dataset.target || 0);
+//         const duration = 1100;
+//         const start = performance.now();
 
-        const tick = (time) => {
-          const progress = Math.min((time - start) / duration, 1);
-          counter.textContent = Math.round(target * progress);
-          if (progress < 1) requestAnimationFrame(tick);
-        };
+//         const tick = (time) => {
+//           const progress = Math.min((time - start) / duration, 1);
+//           counter.textContent = Math.round(target * progress);
+//           if (progress < 1) requestAnimationFrame(tick);
+//         };
 
-        requestAnimationFrame(tick);
-        observer.unobserve(counter);
-      });
-    }, { threshold: 0.6 });
+//         requestAnimationFrame(tick);
+//         observer.unobserve(counter);
+//       });
+//     }, { threshold: 0.6 });
 
-    counters.forEach((counter) => counterObserver.observe(counter));
-  }
+//     counters.forEach((counter) => counterObserver.observe(counter));
+//   }
 
-  if (window.VanillaTilt) {
-    VanillaTilt.init(document.querySelectorAll('.svc-card, .pf-item, .ai-card, .plat-card'), {
-      max: 8,
-      speed: 500,
-      glare: true,
-      'max-glare': 0.12
-    });
-  }
+//   if (window.VanillaTilt) {
+//     VanillaTilt.init(document.querySelectorAll('.svc-card, .pf-item, .ai-card, .plat-card'), {
+//       max: 8,
+//       speed: 500,
+//       glare: true,
+//       'max-glare': 0.12
+//     });
+//   }
 
-  if (window.gsap) {
-    gsap.from('.hero-badge, .hero-title, .hero-typed-wrap, .hero-desc, .hero-cta, .info-strip', {
-      y: 28,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.11,
-      ease: 'power3.out',
-      delay: 0.25
-    });
-  }
+//   if (window.gsap) {
+//     gsap.from('.hero-badge, .hero-title, .hero-typed-wrap, .hero-desc, .hero-cta, .info-strip', {
+//       y: 28,
+//       opacity: 0,
+//       duration: 0.8,
+//       stagger: 0.11,
+//       ease: 'power3.out',
+//       delay: 0.25
+//     });
+//   }
 
-  setupWhatsAppContactForm();
-  setupYoutubeVideoCards();
+//   setupWhatsAppContactForm();
+//   setupYoutubeVideoCards();
 
-  createSocialMenu({
-    wrapperSelector: '.yt-wrapper',
-    menuId: 'yt-choice-menu',
-    links: [
-      { label: 'The Detox Mind', href: 'https://youtube.com/@thedetoxmind-7' },
-      { label: 'ConsTru', href: 'https://youtube.com/@Constru-Ind' }
-    ]
-  });
+//   createSocialMenu({
+//     wrapperSelector: '.yt-wrapper',
+//     menuId: 'yt-choice-menu',
+//     links: [
+//       { label: 'The Detox Mind', href: 'https://youtube.com/@thedetoxmind-7' },
+//       { label: 'ConsTru', href: 'https://youtube.com/@Constru-Ind' }
+//     ]
+//   });
 
-  createSocialMenu({
-    wrapperSelector: '.ig-wrapper',
-    menuId: 'ig-choice-menu',
-    links: [
-      { label: 'Instagram link coming soon', disabled: true }
-    ]
-  });
-});
+//   createSocialMenu({
+//     wrapperSelector: '.ig-wrapper',
+//     menuId: 'ig-choice-menu',
+//     links: [
+//       { label: 'Instagram link coming soon', disabled: true }
+//     ]
+//   });
+// });
 
 function setupWhatsAppContactForm() {
   const contactForm = document.getElementById('contactForm');

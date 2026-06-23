@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddharth Rahul Potpose | Front-End Developer</title>
+  <meta name="description" content="Portfolio of Siddharth Rahul Potpose - Front-End Developer experienced in Angular, TypeScript, JavaScript, responsive SPAs, website management, product operations, and digital content." />
+  <meta property="og:title" content="Siddharth Rahul Potpose | Front-End Developer" />
+  <meta property="og:description" content="Angular front-end developer and digital operations professional from Nagpur." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  <div class="cursor-glow"></div>
+  <div class="gradient-blob blob-1"></div>
+  <div class="gradient-blob blob-2"></div>
+  <div class="gradient-blob blob-3"></div>
+
+<div class="profile-dock" aria-label="Profile quick links">
+     <a href="tel:+918485896373" aria-label="Call Siddharth"><i class="fa-solid fa-phone"></i></a>
+     <a href="mailto:siddharthpotpose9@gmail.com" aria-label="Email Siddharth"><i class="fa-solid fa-envelope"></i></a>
+     <a href="https://www.linkedin.com/in/siddharth-potpose" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+     <span class="yt-wrapper">
+     <a href="#" class="youtube-chooser" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+     </span>
+     <span class="ig-wrapper">
+     <a href="#" class="instagram-chooser" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+     </span>
+   </div>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-logo">&lt;<span>Siddharth</span>/&gt;</div>
+    <div class="loader-text">LOADING PORTFOLIO...</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">&lt;<span>Siddharth</span>/&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ai-skills">Operations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7 hero-content">
+          <div class="hero-badge"><span class="badge-dot"></span>Front-End Developer from Nagpur</div>
+          <h1 class="hero-title">Hi, I'm <span class="hero-name">Siddharth Rahul Potpose</span></h1>
+          <div class="hero-typed-wrap">
+            <span class="hero-typed-prefix">// </span><span id="typed-el"></span>
+          </div>
+          <p class="hero-desc">Front-End Developer with 2.3+ years of IT experience building responsive Angular SPAs, integrating REST APIs, optimizing interfaces, and supporting digital operations for web platforms, products, catalogs, and social content.</p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn-glow"><i class="fa-solid fa-rocket"></i>View My Work</a>
+            <a href="#contact" class="btn-ghost"><i class="fa-solid fa-envelope"></i>Get In Touch</a>
+          </div>
+          <div class="info-strip">
+            <span class="info-pill"><i class="fa-solid fa-location-dot"></i>Nagpur</span>
+            <span class="info-pill"><i class="fa-solid fa-phone"></i>+91 8485896373</span>
+            <span class="info-pill"><i class="fa-solid fa-envelope"></i>siddharthpotpose9@gmail.com</span>
+          </div>
+        </div>
+        <div class="col-lg-5 hero-avatar-col mt-5 mt-lg-0">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner"><span class="avatar-letters">SP</span></div>
+          </div>
+          <div class="float-chip fc-1"><span class="fci"><i class="fa-brands fa-angular"></i></span><div><div class="fcl">Angular</div><div class="fcv">19+</div></div></div>
+          <div class="float-chip fc-3"><span class="fci"><i class="fa-solid fa-chart-line"></i></span><div><div class="fcl">Digital Ops</div><div class="fcv">Web + Content</div></div></div>
+          <div class="float-chip fc-2"><span class="fci"><i class="fa-solid fa-code"></i></span><div><div class="fcl">Experience</div><div class="fcv">2.3+ Years</div></div></div>
+          <div class="float-chip fc-4"><span class="fci"><i class="fa-solid fa-video"></i></span><div><div class="fcl">AI Video</div><div class="fcv">Creation</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>Scroll</span><div class="sh-line"></div></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="about-visual">
+            <span class="about-initials">SP</span>
+            <div class="about-badge"><div class="abn">2.3+</div><div class="abt">Yrs Exp</div></div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="sec-tag">About Me</div>
+          <h2 class="sec-title">Building Responsive <span class="hl">Angular Experiences</span></h2>
+          <div class="sec-line mb-4"></div>
+          <p class="about-copy">I develop responsive single-page applications using Angular 19+, TypeScript, JavaScript, HTML5, CSS3, and Bootstrap. My work focuses on clean component architecture, API integration, cross-browser compatibility, performance, and maintainable UI code.</p>
+          <p class="about-copy about-copy-last">Alongside front-end development, I handle website management, product and catalog operations, Google Search Console, social media handling, content creation, branding, Canva designs, CapCut video edits, and promotional digital content for e-commerce platforms.</p>
+          <div class="stat-grid mb-4">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="50"><div class="stat-num counter" data-target="2">0</div><div class="stat-lbl">Years IT Experience</div></div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="150"><div class="stat-num counter" data-target="19">0</div><div class="stat-lbl">Angular Version</div></div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="250"><div class="stat-num counter" data-target="3">0</div><div class="stat-lbl">Professional Roles</div></div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="350"><div class="stat-num counter" data-target="1">0</div><div class="stat-lbl">E-commerce Project</div></div>
+          </div>
+          <a href="#contact" class="btn-glow d-inline-flex"><i class="fa-solid fa-paper-plane"></i>Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center">My Skills</div>
+        <h2 class="sec-title">Technical <span class="hl">Expertise</span></h2>
+        <div class="sec-line mx-auto mb-3"></div>
+        <p class="sec-sub mx-auto">A focused toolkit for Angular applications, API integration, responsive UI, website operations, and content-led digital execution.</p>
+      </div>
+      <div class="tab-row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+        <button class="stab active" data-stab="frontend">Frontend</button>
+        <button class="stab" data-stab="digital">Digital Ops</button>
+        <button class="stab" data-stab="ai">Testing & Management</button>
+        <button class="stab" data-stab="tools">Tools</button>
+      </div>
+      <div class="skill-panel active" id="stab-frontend">
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-angular"></i></div>Angular 19+</div><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="90"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-code"></i></div>TypeScript</div><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="88"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-js"></i></div>JavaScript</div><span class="sk-pct">86%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="86"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-html5"></i></div>HTML5 / CSS3</div><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="92"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-bootstrap"></i></div>Bootstrap</div><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="90"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-mobile-screen"></i></div>Responsive UI</div><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="92"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-network-wired"></i></div>REST API Integration</div><span class="sk-pct">86%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="86"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-bolt"></i></div>RxJS / Lazy Loading</div><span class="sk-pct">82%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="82"></div></div></div>
+      </div>
+      <div class="skill-panel" id="stab-digital">
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-globe"></i></div>Website Management</div><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="90"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-boxes-stacked"></i></div>Product & Catalog</div><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="88"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-google"></i></div>Google Search Console</div><span class="sk-pct">84%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="84"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>SEO Optimization</div><span class="sk-pct">82%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="82"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-instagram"></i></div>Social Media Handling</div><span class="sk-pct">86%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="86"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-photo-film"></i></div>Content Creation</div><span class="sk-pct">86%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="86"></div></div></div>
+      </div>
+      <div class="skill-panel" id="stab-ai">
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-bug"></i></div>Bug Tracking</div><span class="sk-pct">84%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="84"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>Frontend Debugging</div><span class="sk-pct">86%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="86"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-window-restore"></i></div>Cross-browser Testing</div><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="85"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-server"></i></div>Hosting Support</div><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="78"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>App Handling</div><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="78"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-list-check"></i></div>Issue Follow-up</div><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="88"></div></div></div>
+      </div>
+      <div class="skill-panel" id="stab-tools">
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-brands fa-git-alt"></i></div>Git / GitHub</div><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="88"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-code"></i></div>VS Code</div><span class="sk-pct">92%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="92"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-paper-plane"></i></div>Postman</div><span class="sk-pct">84%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="84"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-code-branch"></i></div>SVN</div><span class="sk-pct">76%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="76"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-palette"></i></div>Canva</div><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="88"></div></div></div>
+        <div class="skill-card"><div class="sk-head"><div class="sk-name"><div class="sk-icon"><i class="fa-solid fa-video"></i></div>CapCut</div><span class="sk-pct">84%</span></div><div class="sk-bar"><div class="sk-fill" data-fill="84"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center">What I Do</div>
+        <h2 class="sec-title">Work I <span class="hl">Deliver</span></h2>
+        <div class="sec-line mx-auto"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0"><div class="svc-card"><div class="svc-icon svc-icon-angular"><i class="fa-brands fa-angular"></i></div><h4>Angular SPA Development</h4><p>Responsive, component-based Angular applications with TypeScript, Bootstrap, routing, reusable UI patterns, and clean maintainable code.</p><div class="svc-tags"><span class="svc-tag">Angular 19+</span><span class="svc-tag">TypeScript</span><span class="svc-tag">Bootstrap</span><span class="svc-tag">SPA</span></div></div></div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="svc-card"><div class="svc-icon svc-icon-api"><i class="fa-solid fa-plug"></i></div><h4>API Integration</h4><p>REST API integration using Angular services, HTTPClient, response handling, UI state management, and collaboration with backend teams.</p><div class="svc-tags"><span class="svc-tag">REST APIs</span><span class="svc-tag">HTTPClient</span><span class="svc-tag">RxJS</span><span class="svc-tag">Postman</span></div></div></div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="svc-card"><div class="svc-icon svc-icon-performance"><i class="fa-solid fa-gauge-high"></i></div><h4>Performance & UI Optimization</h4><p>Cross-browser responsive interfaces, lazy loading, bug fixing, frontend debugging, and practical UI/UX improvement suggestions.</p><div class="svc-tags"><span class="svc-tag">Lazy Loading</span><span class="svc-tag">Debugging</span><span class="svc-tag">Responsive</span><span class="svc-tag">UI/UX</span></div></div></div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0"><div class="svc-card"><div class="svc-icon svc-icon-ops"><i class="fa-solid fa-store"></i></div><h4>Website & Product Operations</h4><p>Website updates, product listings, catalog management, pricing entries, banners, content uploads, QA checks, and issue follow-up.</p><div class="svc-tags"><span class="svc-tag">Catalog</span><span class="svc-tag">Products</span><span class="svc-tag">Banners</span><span class="svc-tag">QA</span></div></div></div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="svc-card"><div class="svc-icon svc-icon-seo"><i class="fa-solid fa-magnifying-glass-chart"></i></div><h4>SEO & Search Console</h4><p>Meta tags, keyword research, indexing checks, Google Search Console setup, visibility improvements, and content optimization.</p><div class="svc-tags"><span class="svc-tag">SEO</span><span class="svc-tag">GSC</span><span class="svc-tag">Indexing</span><span class="svc-tag">Meta Tags</span></div></div></div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="svc-card"><div class="svc-icon svc-icon-content"><i class="fa-solid fa-photo-film"></i></div><h4>Digital Content Creation</h4><p>Social media creatives, short videos, promotional designs, reels, branding content, and publishing support using Canva and CapCut.</p><div class="svc-tags"><span class="svc-tag">Canva</span><span class="svc-tag">CapCut</span><span class="svc-tag">Reels</span><span class="svc-tag">Branding</span></div></div></div>
+      </div>
+      <div class="youtube-work" data-aos="fade-up" data-aos-delay="220">
+        <div class="youtube-work-head">
+          <div>
+            <div class="sec-tag">YouTube Work</div>
+            <h3>Latest Video <span class="hl">Cards</span></h3>
+          </div>
+          <div class="youtube-channel-links">
+            <a href="https://youtube.com/@thedetoxmind-7" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>The Detox Mind</a>
+            <a href="https://youtube.com/@Constru-Ind" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>ConsTru</a>
+          </div>
+        </div>
+        <div class="youtube-video-grid">
+          <article class="yt-video-card detox-card">
+            <div class="yt-frame-wrap">
+              <iframe src="https://www.youtube.com/embed/y-_zE4lRI5k?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=y-_zE4lRI5k&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind video 1" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            </div>
+            <div class="yt-card-body"><span>The Detox Mind</span><h4>Mindset Short</h4></div>
+          </article>
+          <article class="yt-video-card constru-card">
+            <div class="yt-frame-wrap">
+              <iframe src="https://www.youtube.com/embed/qcaYReXXSy0?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=qcaYReXXSy0&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru video 1" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            </div>
+            <div class="yt-card-body"><span>ConsTru</span><h4>Online Building Materials</h4></div>
+          </article>
+          <article class="yt-video-card detox-card">
+            <div class="yt-frame-wrap">
+              <iframe src="https://www.youtube.com/embed/O_U4TtLgjbg?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=O_U4TtLgjbg&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind video 2" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            </div>
+            <div class="yt-card-body"><span>The Detox Mind</span><h4>Hanuman Jayanti Special</h4></div>
+          </article>
+          <article class="yt-video-card constru-card">
+            <div class="yt-frame-wrap">
+              <iframe src="https://www.youtube.com/embed/ujoCA7skpOQ?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ujoCA7skpOQ&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru video 2" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            </div>
+            <div class="yt-card-body"><span>ConsTru</span><h4>ConsTru App</h4></div>
+          </article>
+          <article class="yt-video-card constru-card">
+            <div class="yt-frame-wrap">
+              <iframe src="https://www.youtube.com/embed/zl4W6e7r-Ws?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=zl4W6e7r-Ws&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru video 3" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            </div>
+            <div class="yt-card-body"><span>ConsTru</span><h4>Smart Home Building Choice</h4></div>
+          </article>
+          <article class="yt-video-card constru-card">
+            <div class="yt-frame-wrap">
+              <iframe src="https://www.youtube.com/embed/tqLJt8lSuyw?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=tqLJt8lSuyw&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru video 4" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+            </div>
+            <div class="yt-card-body"><span>ConsTru</span><h4>Building Materials Delivery</h4></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center">My Work</div>
+        <h2 class="sec-title">Featured <span class="hl">Projects</span></h2>
+        <div class="sec-line mx-auto"></div>
+      </div>
+      <div class="pf-filter justify-content-center mb-4" data-aos="fade-up" data-aos-delay="100">
+        <button class="pf-btn active" data-pf="all">All</button>
+        <button class="pf-btn" data-pf="web">Web Dev</button>
+        <button class="pf-btn" data-pf="marketing">Operations</button>
+        <button class="pf-btn" data-pf="ai">Content</button>
+      </div>
+      <div class="pf-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="pf-item" data-cat="web"><div class="pf-bg pf-bg-constru"><i class="fa-solid fa-store"></i></div><div class="pf-overlay"><div class="pf-meta">E-commerce</div><h4>ConsTru Platform</h4><p>Managed website operations, catalog updates, UI/UX suggestions, testing, issue tracking, SEO, banners, and content uploads.</p><div class="pf-links"><a href="#contact" class="pf-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+        <div class="pf-item" data-cat="web"><div class="pf-bg pf-bg-indtrack"><i class="fa-brands fa-angular"></i></div><div class="pf-overlay"><div class="pf-meta">Angular</div><h4>Indtrack SPAs</h4><p>Developed and maintained responsive Angular, TypeScript, Bootstrap applications with API integrations and third-party libraries.</p><div class="pf-links"><a href="#experience" class="pf-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+        <div class="pf-item" data-cat="web"><div class="pf-bg pf-bg-codelancer"><i class="fa-solid fa-laptop-code"></i></div><div class="pf-overlay"><div class="pf-meta">Websites</div><h4>Codelancer Client Sites</h4><p>Built responsive websites using PHP, HTML5, CSS3, and JavaScript with hosting and deployment support on Hostinger.</p><div class="pf-links"><a href="#experience" class="pf-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+        <div class="pf-item" data-cat="marketing"><div class="pf-bg pf-bg-catalog"><i class="fa-solid fa-boxes-stacked"></i></div><div class="pf-overlay"><div class="pf-meta">Operations</div><h4>Product & Catalog Management</h4><p>Handled product listings, pricing entries, catalog maintenance, banners, content uploads, and platform workflow improvements.</p><div class="pf-links"><a href="#services" class="pf-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+        <div class="pf-item" data-cat="marketing"><div class="pf-bg pf-bg-search"><i class="fa-brands fa-google"></i></div><div class="pf-overlay"><div class="pf-meta">SEO</div><h4>Search Console & Visibility</h4><p>Worked on meta tags, keyword research, indexing, Google Search Console setup, and website visibility improvements.</p><div class="pf-links"><a href="#skills" class="pf-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+        <div class="pf-item" data-cat="ai"><div class="pf-bg pf-bg-creative"><i class="fa-solid fa-photo-film"></i></div><div class="pf-overlay"><div class="pf-meta">Content</div><h4>Social & Video Creatives</h4><p>Created reels, promotional designs, branding content, and social posts using Canva, CapCut, and practical content workflows.</p><div class="pf-links"><a href="#social" class="pf-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="sec-tag">My Journey</div>
+          <h2 class="sec-title">Work <span class="hl">Experience</span></h2>
+          <div class="sec-line mb-4"></div>
+          <p class="journey-copy">2.3+ years across Angular front-end development, responsive websites, API integration, website management, app handling, and digital content operations.</p>
+        </div>
+        <div class="col-lg-8 mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="tl">
+            <div class="tl-item" data-aos="fade-up">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-period"><i class="fa-regular fa-calendar"></i>05/2026 - Present</div>
+                <h4>Developer And Digital Content Manager</h4>
+                <div class="tl-company"><i class="fa-solid fa-building"></i>Okra Venture Pvt Ltd, Nagpur</div>
+                <p>Overseeing web platform updates, UI/UX improvements, mobile app handling, bug fixes, performance optimization, backend integration support, social media content, and hosting server maintenance.</p>
+                <div class="tl-tags"><span class="tl-tag">Website Management</span><span class="tl-tag">App Handling</span><span class="tl-tag">Social Media</span><span class="tl-tag">Hosting Support</span></div>
+              </div>
+            </div>
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="80">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-period"><i class="fa-regular fa-calendar"></i>03/2024 - 01/2026</div>
+                <h4>Angular Developer</h4>
+                <div class="tl-company"><i class="fa-solid fa-building"></i>Indtrack Technology Pvt. Ltd.</div>
+                <p>Developed and maintained responsive SPAs using Angular, TypeScript, and Bootstrap. Implemented API integrations, integrated ngx-multiselect-dropdown, ngx-toastr, and daterangepicker, and ensured cross-browser responsive behavior.</p>
+                <div class="tl-tags"><span class="tl-tag">Angular</span><span class="tl-tag">TypeScript</span><span class="tl-tag">Bootstrap</span><span class="tl-tag">REST APIs</span><span class="tl-tag">GitHub</span></div>
+              </div>
+            </div>
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="160">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-period"><i class="fa-regular fa-calendar"></i>06/2023 - 01/2024</div>
+                <h4>Web Developer</h4>
+                <div class="tl-company"><i class="fa-solid fa-building"></i>Codelancer Cyber Security &amp; Forensics</div>
+                <p>Developed dynamic and responsive websites using PHP, HTML5, CSS3, and JavaScript. Built user-friendly web pages, managed hosting and deployment on Hostinger, and delivered client-specific web solutions.</p>
+                <div class="tl-tags"><span class="tl-tag">PHP</span><span class="tl-tag">HTML5</span><span class="tl-tag">CSS3</span><span class="tl-tag">JavaScript</span><span class="tl-tag">Hostinger</span></div>
+              </div>
+            </div>
+            <div class="tl-item" data-aos="fade-up" data-aos-delay="240">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-period"><i class="fa-regular fa-calendar"></i>01/2026 - Present</div>
+                <h4>ConsTru Project Operations</h4>
+                <div class="tl-company"><i class="fa-solid fa-store"></i>E-commerce Platform for Construction &amp; Building Materials</div>
+                <p>Managed day-to-day website operations, development-team coordination, website testing, issue reporting, UI/UX suggestions, product listings, pricing, banners, SEO, Google Search Console, and social media creatives.</p>
+                <div class="tl-tags"><span class="tl-tag">E-commerce</span><span class="tl-tag">Catalog</span><span class="tl-tag">SEO</span><span class="tl-tag">Canva</span><span class="tl-tag">Content</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI SKILLS ===== -->
+  <section id="ai-skills">
+    <div class="container ai-shell">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center accent-tag">Operations Strength</div>
+        <h2 class="sec-title">Digital <span class="hl">Execution</span></h2>
+        <div class="sec-line mx-auto mb-3 accent-line"></div>
+        <p class="sec-sub mx-auto">Hands-on support across website updates, product workflows, SEO visibility, content publishing, and platform coordination.</p>
+      </div>
+<div class="row g-4">
+         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0"><div class="ai-card"><div class="ai-icon"><i class="fa-solid fa-window-restore"></i></div><h4>Website Management</h4><p>Regular web updates, page improvements, content uploads, UI/UX enhancement suggestions, and coordination with development teams.</p><div class="ai-tools"><span class="ai-tool">Updates</span><span class="ai-tool">UI/UX</span><span class="ai-tool">Content</span><span class="ai-tool">QA</span></div></div></div>
+         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="ai-card"><div class="ai-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><h4>App Handling</h4><p>Mobile application deployment support, bug follow-up, performance checks, and integration coordination with backend services.</p><div class="ai-tools"><span class="ai-tool">Deployment</span><span class="ai-tool">Bug Fixes</span><span class="ai-tool">Performance</span><span class="ai-tool">Backend</span></div></div></div>
+         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="ai-card"><div class="ai-icon"><i class="fa-solid fa-box-open"></i></div><h4>Catalog Operations</h4><p>Product listings, pricing entries, banners, catalog updates, content corrections, and operational workflow support for e-commerce.</p><div class="ai-tools"><span class="ai-tool">Products</span><span class="ai-tool">Pricing</span><span class="ai-tool">Banners</span><span class="ai-tool">Catalog</span></div></div></div>
+         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0"><div class="ai-card"><div class="ai-icon"><i class="fa-brands fa-google"></i></div><h4>SEO Visibility</h4><p>Meta tags, keyword research, Search Console setup, indexing checks, and practical improvements for organic visibility.</p><div class="ai-tools"><span class="ai-tool">GSC</span><span class="ai-tool">Meta Tags</span><span class="ai-tool">Indexing</span><span class="ai-tool">Keywords</span></div></div></div>
+         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="ai-card"><div class="ai-icon"><i class="fa-solid fa-video"></i></div><h4>Video & Creative Production</h4><p>Short-form videos, reels, promotional graphics, branding posts, and campaign creatives created with Canva and CapCut.</p><div class="ai-tools"><span class="ai-tool">Canva</span><span class="ai-tool">CapCut</span><span class="ai-tool">Reels</span><span class="ai-tool">Design</span></div></div></div>
+         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160"><div class="ai-card"><div class="ai-icon"><i class="fa-solid fa-headset"></i></div><h4>Technical Support</h4><p>Hosting server maintenance support, frontend debugging, bug reporting, issue validation, and practical production follow-through.</p><div class="ai-tools"><span class="ai-tool">Hosting</span><span class="ai-tool">Debugging</span><span class="ai-tool">Reports</span><span class="ai-tool">Support</span></div></div></div>
+       </div>
+       <div class="youtube-work" data-aos="fade-up" data-aos-delay="200">
+         <div class="youtube-work-head">
+           <div>
+             <div class="sec-tag">YouTube Shorts</div>
+             <h3>Digital <span class="hl">Execution Videos</span></h3>
+           </div>
+           <div class="youtube-channel-links">
+             <a href="https://youtube.com/@thedetoxmind-7/shorts" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>The Detox Mind Shorts</a>
+             <a href="https://youtube.com/@Constru-Ind/shorts" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>ConsTru Shorts</a>
+           </div>
+         </div>
+<div class="youtube-video-grid">
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/vaaL8_kKcYA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=vaaL8_kKcYA&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 1" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>3 बजे का सच 2</h4></div>
+            </article>
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/RpDgYSvR1qU?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=RpDgYSvR1qU&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 2" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>Secret Revealed</h4></div>
+            </article>
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/E8sRjY1a75k?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=E8sRjY1a75k&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 3" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>रात 3 बजे</h4></div>
+            </article>
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/zayr-TKj61Y?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=zayr-TKj61Y&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 4" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>रात 2 बजे कुत्ता</h4></div>
+            </article>
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/KtTmpV9Lgv8?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=KtTmpV9Lgv8&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 5" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>तुम रोज़ ये गलती</h4></div>
+            </article>
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/_7_-7kw3Wfs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=_7_-7kw3Wfs&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 6" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>4 आदतें छोड़ दो</h4></div>
+            </article>
+            <article class="yt-video-card detox-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/uraE--wxGuo?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=uraE--wxGuo&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="The Detox Mind Shorts video 7" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>The Detox Mind</span><h4>हनुमान जी ताकत</h4></div>
+            </article>
+            <article class="yt-video-card constru-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/cky0r3wfeiA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=cky0r3wfeiA&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru Shorts video 1" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>ConsTru</span><h4>Cement Mistake!</h4></div>
+            </article>
+            <article class="yt-video-card constru-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/TT6nkHes0Lo?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=TT6nkHes0Lo&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru Shorts video 2" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>ConsTru</span><h4>Construction Prices</h4></div>
+            </article>
+            <article class="yt-video-card constru-card shorts">
+              <div class="yt-frame-wrap shorts">
+                <iframe src="https://www.youtube.com/embed/cpaFVs9ejT8?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=cpaFVs9ejT8&amp;playsinline=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" title="ConsTru Shorts video 3" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button type="button" class="yt-audio-btn" data-muted="true" aria-label="Unmute video" title="Unmute video"><i class="fa-solid fa-volume-xmark"></i></button>
+              </div>
+              <div class="yt-card-body"><span>ConsTru</span><h4>One App Construction</h4></div>
+            </article>
+          </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- ===== SOCIAL ===== -->
+  <section id="social">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center">Social Presence</div>
+        <h2 class="sec-title">My <span class="hl">Social Links</span></h2>
+        <div class="sec-line mx-auto mb-3"></div>
+        <p class="sec-sub mx-auto">Quick access to my professional profile and content channel, with the same fixed social rail available on the right side of the screen.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="plat-card">
+            <div class="plat-cover yt-cov"><span class="pci"><i class="fa-brands fa-youtube"></i></span></div>
+            <div class="plat-body">
+              <div class="plat-handle">The Detox Mind <span class="verified"><i class="fa-solid fa-circle-check"></i></span></div>
+              <p class="plat-desc">My YouTube channel for content experiments, video creation, publishing workflows, and digital storytelling.</p>
+              <div class="plat-stats">
+                <div class="ps"><div class="psv">YT</div><div class="psl">Channel</div></div>
+                <div class="ps"><div class="psv">Video</div><div class="psl">Creation</div></div>
+                <div class="ps"><div class="psv">Content</div><div class="psl">Publishing</div></div>
+              </div>
+              <a href="https://youtube.com/@thedetoxmind-7" class="youtube-chooserer plat-btn yt-btn"><i class="fa-brands fa-youtube"></i>Visit Channel</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="plat-card">
+            <div class="plat-cover ig-cov"><span class="pci"><i class="fa-brands fa-linkedin-in"></i></span></div>
+            <div class="plat-body">
+              <div class="plat-handle">Siddharth Potpose <span class="verified"><i class="fa-solid fa-circle-check"></i></span></div>
+              <p class="plat-desc">Professional profile with front-end development experience, project history, and career details.</p>
+              <div class="plat-stats">
+                <div class="ps"><div class="psv">2.3+</div><div class="psl">Years</div></div>
+                <div class="ps"><div class="psv">Angular</div><div class="psl">Focus</div></div>
+                <div class="ps"><div class="psv">Nagpur</div><div class="psl">Location</div></div>
+              </div>
+              <a href="https://www.linkedin.com/in/siddharth-potpose" target="_blank" rel="noopener" class="plat-btn ig-btn"><i class="fa-brands fa-linkedin-in"></i>Visit Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="metrics-grid" data-aos="fade-up" data-aos-delay="150">
+        <div class="m-card"><div class="m-icon metric-icon-angular"><i class="fa-brands fa-angular"></i></div><div><div class="mv">Angular</div><div class="ml">SPA Development</div></div></div>
+        <div class="m-card"><div class="m-icon metric-icon-rest"><i class="fa-solid fa-plug"></i></div><div><div class="mv">REST</div><div class="ml">API Integration</div></div></div>
+        <div class="m-card"><div class="m-icon metric-icon-gsc"><i class="fa-brands fa-google"></i></div><div><div class="mv">GSC</div><div class="ml">Search Console</div></div></div>
+        <div class="m-card"><div class="m-icon metric-icon-canva"><i class="fa-solid fa-palette"></i></div><div><div class="mv">Canva</div><div class="ml">Creatives</div></div></div>
+        <div class="m-card"><div class="m-icon metric-icon-capcut"><i class="fa-solid fa-video"></i></div><div><div class="mv">CapCut</div><div class="ml">Video Editing</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center">Education</div>
+        <h2 class="sec-title">Academic <span class="hl">Background</span></h2>
+        <div class="sec-line mx-auto mb-3"></div>
+        <p class="sec-sub mx-auto">Commerce and management education supporting technical delivery, coordination, and digital business operations.</p>
+      </div>
+      <div class="edu-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="edu-card">
+          <div class="edu-year"><i class="fa-regular fa-calendar me-1"></i>2016 - 2018</div>
+          <h4>Master Of Business Administration</h4>
+          <p>Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year"><i class="fa-regular fa-calendar me-1"></i>2013 - 2016</div>
+          <h4>Bachelor Of Commerce</h4>
+          <p>Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year"><i class="fa-solid fa-id-card me-1"></i>Personal Details</div>
+          <h4>Siddharth Rahul Potpose</h4>
+          <p>Date of birth: 03/05/1996<br>Location: Nagpur, Maharashtra</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="sec-tag justify-content-center">Get In Touch</div>
+        <h2 class="sec-title">Let's <span class="hl">Work Together</span></h2>
+        <div class="sec-line mx-auto mb-3"></div>
+        <p class="sec-sub mx-auto">Reach out for front-end development, Angular work, website operations, product management, or digital content collaboration.</p>
+      </div>
+      <div class="row g-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-5">
+          <div class="c-info">
+            <div class="c-item"><div class="c-ico"><i class="fa-solid fa-envelope"></i></div><div><h5>Email</h5><p><a href="mailto:siddharthpotpose9@gmail.com">siddharthpotpose9@gmail.com</a></p></div></div>
+            <div class="c-item"><div class="c-ico"><i class="fa-solid fa-phone"></i></div><div><h5>Phone</h5><p><a href="tel:+918485896373">+91 8485896373</a></p></div></div>
+            <div class="c-item"><div class="c-ico"><i class="fa-solid fa-location-dot"></i></div><div><h5>Location</h5><p>Nagpur, Maharashtra</p></div></div>
+            <div class="c-item"><div class="c-ico"><i class="fa-brands fa-linkedin"></i></div><div><h5>LinkedIn</h5><p><a href="https://www.linkedin.com/in/siddharth-potpose" target="_blank" rel="noopener">linkedin.com/in/siddharth-potpose</a></p></div></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="c-form">
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6"><div class="mb-3"><label class="form-label">Your Name</label><input type="text" class="form-control" name="name" placeholder="John Doe" required /></div></div>
+                <div class="col-md-6"><div class="mb-3"><label class="form-label">Email Address</label><input type="email" class="form-control" name="email" placeholder="your@email.com" required /></div></div>
+                <div class="col-12"><div class="mb-3"><label class="form-label">Service</label>
+                  <select class="form-select" name="service" required>
+                    <option value="">Select a service...</option>
+                    <option>Angular Front-End Development</option>
+                    <option>REST API Integration</option>
+                    <option>Website Management</option>
+                    <option>Product &amp; Catalog Management</option>
+                    <option>SEO / Google Search Console</option>
+                    <option>Social Media &amp; Content Creation</option>
+                    <option>General Inquiry</option>
+                  </select>
+                </div></div>
+                <div class="col-12"><div class="mb-3"><label class="form-label">Message</label><textarea class="form-control" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div></div>
+                <div class="col-12"><button type="submit" class="sub-btn"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="ft-brand">&lt;<span>Siddharth</span>/&gt;</div>
+          <p class="ft-desc">Front-End Developer focused on Angular, TypeScript, responsive SPAs, API integration, website operations, and digital content workflows.</p>
+          <div class="si-row">
+            <a href="https://www.linkedin.com/in/siddharth-potpose" target="_blank" rel="noopener" class="si"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:siddharthpotpose9@gmail.com" class="si"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+918485896373" class="si"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://youtube.com/@thedetoxmind-7" class="youtube-chooser si" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <p class="ft-h">Navigation</p>
+          <ul class="ft-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Education</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <p class="ft-h">Services</p>
+          <ul class="ft-links">
+            <li><a href="#services">Angular SPAs</a></li>
+            <li><a href="#services">API Integration</a></li>
+            <li><a href="#services">Website Ops</a></li>
+            <li><a href="#services">SEO / GSC</a></li>
+            <li><a href="#services">Content Creation</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <p class="ft-h">Contact</p>
+          <p class="footer-contact-copy">Open to front-end development, Angular, website operations, and digital content roles.</p>
+          <div class="d-flex gap-2">
+            <input type="email" class="form-control" value="siddharthpotpose9@gmail.com" readonly />
+            <a href="mailto:siddharthpotpose9@gmail.com" class="btn-glow px-3 flex-shrink-0 footer-email-btn"><span>Email</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bottom">
+        <p>&copy; 2026 Siddharth Rahul Potpose. All rights reserved.</p>
+        <!-- <p>Built with HTML5, CSS3, Bootstrap &amp; JavaScript</p> -->
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" id="btt"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <a href="https://wa.me/918485896373" id="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
